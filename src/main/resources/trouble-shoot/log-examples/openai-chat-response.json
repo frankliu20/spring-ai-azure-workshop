@@ -1,0 +1,75 @@
+{
+    "az.sdk.message": "HTTP response",
+    "statusCode": 200,
+    "url": "https://frank-ai-11-28.openai.azure.com//openai/deployments/gpt-4o/chat/completions?api-version=2024-05-01-prev",
+    "durationMs": 2697,
+    "content-length": 928,
+    "body": {
+        "choices": [
+            {
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                },
+                "finish_reason": "stop",
+                "index": 0,
+                "logprobs": null,
+                "message": {
+                    "content": "Why don't scientists trust atoms?\n\nBecause they make up everything!",
+                    "role": "assistant"
+                }
+            }
+        ],
+        "created": 1733129377,
+        "id": "chatcmpl-AZwPZO9FBE82WURFNLwYgHG3S9mRF",
+        "model": "gpt-4o-2024-08-06",
+        "object": "chat.completion",
+        "prompt_filter_results": [
+            {
+                "prompt_index": 0,
+                "content_filter_results": {
+                    "hate": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "jailbreak": {
+                        "filtered": false,
+                        "detected": false
+                    },
+                    "self_harm": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "sexual": {
+                        "filtered": false,
+                        "severity": "safe"
+                    },
+                    "violence": {
+                        "filtered": false,
+                        "severity": "safe"
+                    }
+                }
+            }
+        ],
+        "system_fingerprint": "fp_d54531d9eb",
+        "usage": {
+            "completion_tokens": 12,
+            "prompt_tokens": 11,
+            "total_tokens": 23
+        }
+    }
+}

@@ -1,0 +1,72 @@
+{
+  "az.sdk.message": "HTTP request",
+  "method": "POST",
+  "url": "https://frank-ai-11-28.openai.azure.com//openai/deployments/gpt-4o/chat/completions?api-version=2024-05-01-preview",
+  "tryCount": 1,
+  "content-length": 923,
+  "body": {
+    "messages": [
+      {
+        "content": [
+          {
+            "text": "What's the health status of the patient with id {partient}.",
+            "type": "text"
+          }
+        ],
+        "role": "user"
+      },
+      {
+        "content": "The patient with ID P004 has increased blood pressure.",
+        "role": "assistant"
+      },
+      {
+        "content": [
+          {
+            "text": "What's the health status of the patient with id P005.",
+            "type": "text"
+          }
+        ],
+        "role": "user"
+      },
+      {
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_46cshTuuUd6qSkbXEKqWupbS",
+            "function": {
+              "name": "retrievePatientHealthStatus",
+              "arguments": "{\"patientId\":\"P005\"}"
+            },
+            "type": "function"
+          }
+        ]
+      },
+      {
+        "content": "{\"status\":\"Healthy\"}",
+        "tool_call_id": "call_46cshTuuUd6qSkbXEKqWupbS",
+        "role": "tool"
+      }
+    ],
+    "temperature": 0.7,
+    "stream": false,
+    "model": "gpt-4o",
+    "tools": [
+      {
+        "function": {
+          "name": "retrievePatientHealthStatus",
+          "description": "Get patient health status",
+          "parameters": {
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "type": "object",
+            "properties": {
+              "patientId": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "type": "function"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "az.sdk.message": "HTTP request",
+    "method": "POST",
+    "url": "https://frank-ai-11-28.openai.azure.com//openai/deployments/gpt-4o/chat/completions?api-version=2024-05-01-preview",
+    "tryCount": 1,
+    "content-length": 286,
+    "body": {
+      "messages": [
+        {
+          "content": [
+            {
+              "text": "Explain what do you see on this picture?",
+              "type": "text"
+            },
+            {
+              "image_url": {
+                "url": "https://docs.spring.io/spring-ai/reference/_images/multimodal.test.png"
+              },
+              "type": "image_url"
+            }
+          ],
+          "role": "user"
+        }
+      ],
+      "temperature": 0.7,
+      "stream": false,
+      "model": "gpt-4o"
+    }
+  }

@@ -1,0 +1,14 @@
+AdvisedRequest[
+    chatModel=org.springframework.ai.azure.openai.AzureOpenAiChatModel@123cad35, 
+    userText=Tell me a joke, 
+    systemText=, 
+    chatOptions=org.springframework.ai.azure.openai.AzureOpenAiChatOptions@3bec7c26, 
+    media=[], 
+    functionNames=[], 
+    functionCallbacks=[], 
+    messages=[], 
+    userParams={}, 
+    systemParams={}, 
+    advisors=[org.springframework.ai.chat.client.advisor.observation.ObservableRequestResponseAdvisor@35769f9f], 
+    advisorParams={}
+]

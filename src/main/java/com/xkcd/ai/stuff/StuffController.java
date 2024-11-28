@@ -1,7 +1,7 @@
 package com.xkcd.ai.stuff;
 
-import org.springframework.ai.chat.ChatClient;
-import org.springframework.ai.chat.Generation;
+import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.model.Generation;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +44,7 @@ public class StuffController {
 			map.put("context", "");
 		}
 		Prompt prompt = promptTemplate.create(map);
-		Generation generation = chatClient.call(prompt).getResult();
+		Generation generation = chatClient.prompt(prompt).call().chatResponse().getResult();
 		return new Completion(generation.getOutput().getContent());
 	}
 

@@ -1,8 +1,6 @@
 package com.xkcd.ai.roles;
 
-import org.springframework.ai.chat.ChatClient;
-import org.springframework.ai.chat.Generation;
-import org.springframework.ai.chat.messages.AbstractMessage;
+import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.messages.AssistantMessage;
 import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.messages.UserMessage;
@@ -40,7 +38,7 @@ public class RoleController {
 		SystemPromptTemplate systemPromptTemplate = new SystemPromptTemplate(systemResource);
 		Message systemMessage = systemPromptTemplate.createMessage(Map.of("name", name, "voice", voice));
 		Prompt prompt = new Prompt(List.of(userMessage, systemMessage));
-		return chatClient.call(prompt).getResult().getOutput();
+		return chatClient.prompt(prompt).call().chatResponse().getResult().getOutput();
 	}
 
 }

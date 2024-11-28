@@ -1,1 +1,1 @@
-Tell me a {adjective} joke about {topic}
+Tell me a {adjective} joke about {topic} in {language}

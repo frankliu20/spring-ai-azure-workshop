@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Before you beginm make sure to set the following environment variables.
+Before you begin, make sure to set the following environment variables.
 
 ```shell
 export SPRING_AI_AZURE_OPENAI_API_KEY=<INSERT KEY HERE>
@@ -13,18 +13,21 @@ export SPRING_AI_AZURE_OPENAI_ENDPOINT=<INSERT ENDPOINT URL HERE>
 
 The configuration assumes you have already created deployments of the following names in the Azure OpenAI Studio
 
-* Deployment Name: `gpt-35-turbo-16k` with the model `gpt-35-turbo-16k`
+* Deployment Name: `gpt-4o` with the model `gpt-4o`
 * Deployment Name: `text-embedding-ada-002` with the model `text-embedding-ada-002`
 
 NOTE: Spring configuration properties currently use the property-name `model` instead of `deployment-name` so don't get confused.  Spring AI will be renaming the property in the future to avoid confusion.  See [here](https://docs.spring.io/spring-ai/reference/api/clients/azure-openai-chat.html#_deployment_name) for more information.
 
 For the chat, the configuration in `application.properties` should contain the following
 
-`spring.ai.azure.openai.chat.options.model=gpt-35-turbo-16k`
+`spring.ai.azure.openai.chat.options.model=gpt-4o`
 
 The default value for the embedding model is `text-embedding-ada-002`, but if you wanted to change it you would set the configuration in `application.properties` as shown below.
 
 `spring.ai.azure.openai.embedding.options.model=text-embedding-ada-002`
+
+## Prepare role 
+Add `Cognitive Services OpenAI User` Role to you or your application
 
 ## Workshop Overview
 

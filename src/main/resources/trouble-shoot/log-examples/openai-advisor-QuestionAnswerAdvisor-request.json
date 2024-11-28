@@ -1,0 +1,40 @@
+{
+  "az.sdk.message": "HTTP request",
+  "method": "POST",
+  "url": "https://frank-ai-11-28.openai.azure.com//openai/deployments/gpt-4o/chat/completions?api-version=2024-05-01-preview",
+  "tryCount": 1,
+  "content-length": 1923,
+  "body": {
+    "messages": [
+      {
+        "content": [
+          {
+            "text": "What bike is good for city commuting?\nContext information is below.\n---------------------\nprice: name: Velocity V9\n2199.99\nshortDescription: Velocity V9 is a high-performance hybrid bike that combines speed and comfort for riders who demand the best of both worlds. The lightweight aluminum frame, along with the carbon fork and seat post, provide optimal stiffness and absorption to tackle any terrain. A 2x Shimano Deore drivetrain, hydraulic disc brakes, and 700c wheels with high-quality tires make it a versatile ride for commuters, fitness riders, and weekend adventurers alike.\n\nprice: 5499.99\nname: FastRider X1\nshortDescription: FastRider X1 is a high-performance e-bike designed for riders seeking speed and long-distance capabilities. Equipped with a powerful motor and a high-capacity battery, the FastRider X1 is perfect for daily commuters and e-bike enthusiasts. It boasts a sleek and functional design, making it a great alternative to car transportation. The bike also features a smartphone controller for easy navigation and entertainment options.\n\nprice: 399.99\nname: Celerity X5\nshortDescription: Celerity X5 is a versatile and reliable road bike that is designed for experienced and amateur riders alike. It's designed to provide smooth and comfortable rides over long distances. With an ultra-lightweight and responsive carbon fiber frame, Shimano 105 groupset, hydraulic disc brakes, and 28mm wide tires, this bike ensures efficient power transfer, precise handling, and superior stopping power.\n\n---------------------\nGiven the context and provided history information and not prior knowledge,\nreply to the user comment. If the answer is not in the context, inform\nthe user that you can't answer the question.\n",
+            "type": "text"
+          }
+        ],
+        "role": "user"
+      }
+    ],
+    "temperature": 0.7,
+    "stream": false,
+    "model": "gpt-4o"
+  }
+}
+
+// What bike is good for city commuting?
+
+// Context information is below:
+
+// Velocity V9
+
+// Price: $2199.99
+// Description: Velocity V9 is a high-performance hybrid bike that combines speed and comfort for riders who demand the best of both worlds. The lightweight aluminum frame, along with the carbon fork and seat post, provide optimal stiffness and absorption to tackle any terrain. A 2x Shimano Deore drivetrain, hydraulic disc brakes, and 700c wheels with high-quality tires make it a versatile ride for commuters, fitness riders, and weekend adventurers alike.
+// FastRider X1
+
+// Price: $5499.99
+// Description: FastRider X1 is a high-performance e-bike designed for riders seeking speed and long-distance capabilities. Equipped with a powerful motor and a high-capacity battery, the FastRider X1 is perfect for daily commuters and e-bike enthusiasts. It boasts a sleek and functional design, making it a great alternative to car transportation. The bike also features a smartphone controller for easy navigation and entertainment options.
+// Celerity X5
+
+// Price: $399.99
+// Description: Celerity X5 is a versatile and reliable road bike that is designed for experienced and amateur riders alike. It's designed to provide smooth and comfortable rides over long distances. With an ultra-lightweight and responsive carbon fiber frame, Shimano 105 groupset, hydraulic disc brakes, and 28mm wide tires, this bike ensures efficient power transfer, precise handling, and superior stopping power.

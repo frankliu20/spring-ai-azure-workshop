@@ -1,0 +1,131 @@
+{
+    "metadata": {
+        "id": "chatcmpl-AZwPZO9FBE82WURFNLwYgHG3S9mRF",
+        "model": "gpt-4o-2024-08-06",
+        "rateLimit": {
+            "tokensLimit": 0,
+            "tokensReset": 0.0,
+            "requestsReset": 0.0,
+            "requestsLimit": 0,
+            "tokensRemaining": 0,
+            "requestsRemaining": 0
+        },
+        "usage": {
+            "generationTokens": 12,
+            "promptTokens": 11,
+            "totalTokens": 23
+        },
+        "promptMetadata": [
+            {
+                "contentFilterMetadata": {
+                    "sexual": {
+                        "severity": "safe",
+                        "filtered": false
+                    },
+                    "violence": {
+                        "severity": "safe",
+                        "filtered": false
+                    },
+                    "hate": {
+                        "severity": "safe",
+                        "filtered": false
+                    },
+                    "selfHarm": {
+                        "severity": "safe",
+                        "filtered": false
+                    },
+                    "profanity": null,
+                    "customBlocklists": null,
+                    "error": null,
+                    "jailbreak": {
+                        "filtered": false,
+                        "detected": false
+                    },
+                    "indirectAttack": null
+                },
+                "promptIndex": 0
+            }
+        ],
+        "empty": false
+    },
+    "results": [
+        {
+            "metadata": {
+                "contentFilterMetadata": {
+                    "sexual": {
+                        "severity": "safe",
+                        "filtered": false
+                    },
+                    "violence": {
+                        "severity": "safe",
+                        "filtered": false
+                    },
+                    "hate": {
+                        "severity": "safe",
+                        "filtered": false
+                    },
+                    "selfHarm": {
+                        "severity": "safe",
+                        "filtered": false
+                    },
+                    "profanity": null,
+                    "customBlocklists": null,
+                    "error": null,
+                    "protectedMaterialText": null,
+                    "protectedMaterialCode": null
+                },
+                "finishReason": "stop"
+            },
+            "output": {
+                "messageType": "ASSISTANT",
+                "metadata": {
+                    "choiceIndex": 0,
+                    "finishReason": "stop",
+                    "id": "chatcmpl-AZwPZO9FBE82WURFNLwYgHG3S9mRF",
+                    "messageType": "ASSISTANT"
+                },
+                "toolCalls": [],
+                "content": "Why don't scientists trust atoms?\n\nBecause they make up everything!"
+            }
+        }
+    ],
+    "result": {
+        "metadata": {
+            "contentFilterMetadata": {
+                "sexual": {
+                    "severity": "safe",
+                    "filtered": false
+                },
+                "violence": {
+                    "severity": "safe",
+                    "filtered": false
+                },
+                "hate": {
+                    "severity": "safe",
+                    "filtered": false
+                },
+                "selfHarm": {
+                    "severity": "safe",
+                    "filtered": false
+                },
+                "profanity": null,
+                "customBlocklists": null,
+                "error": null,
+                "protectedMaterialText": null,
+                "protectedMaterialCode": null
+            },
+            "finishReason": "stop"
+        },
+        "output": {
+            "messageType": "ASSISTANT",
+            "metadata": {
+                "choiceIndex": 0,
+                "finishReason": "stop",
+                "id": "chatcmpl-AZwPZO9FBE82WURFNLwYgHG3S9mRF",
+                "messageType": "ASSISTANT"
+            },
+            "toolCalls": [],
+            "content": "Why don't scientists trust atoms?\n\nBecause they make up everything!"
+        }
+    }
+}

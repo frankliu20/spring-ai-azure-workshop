@@ -1,0 +1,75 @@
+{
+  "az.sdk.message": "HTTP response",
+  "statusCode": 200,
+  "url": "https://frank-ai-11-28.openai.azure.com//openai/deployments/gpt-4o/chat/completions?api-version=2024-05-01-preview",
+  "durationMs": 983,
+  "content-length": 949,
+  "body": {
+    "choices": [
+      {
+        "content_filter_results": {
+          "hate": {
+            "filtered": false,
+            "severity": "safe"
+          },
+          "self_harm": {
+            "filtered": false,
+            "severity": "safe"
+          },
+          "sexual": {
+            "filtered": false,
+            "severity": "safe"
+          },
+          "violence": {
+            "filtered": false,
+            "severity": "safe"
+          }
+        },
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The health status of the patient with ID P004 is that they have increased blood pressure.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1733215932,
+    "id": "chatcmpl-AaIvczoa5q6bd40aX3egRLhsYfU2I",
+    "model": "gpt-4o-2024-08-06",
+    "object": "chat.completion",
+    "prompt_filter_results": [
+      {
+        "prompt_index": 0,
+        "content_filter_results": {
+          "hate": {
+            "filtered": false,
+            "severity": "safe"
+          },
+          "jailbreak": {
+            "filtered": false,
+            "detected": false
+          },
+          "self_harm": {
+            "filtered": false,
+            "severity": "safe"
+          },
+          "sexual": {
+            "filtered": false,
+            "severity": "safe"
+          },
+          "violence": {
+            "filtered": false,
+            "severity": "safe"
+          }
+        }
+      }
+    ],
+    "system_fingerprint": "fp_d54531d9eb",
+    "usage": {
+      "completion_tokens": 19,
+      "prompt_tokens": 93,
+      "total_tokens": 112
+    }
+  }
+}

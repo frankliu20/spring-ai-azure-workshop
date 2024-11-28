@@ -1,0 +1,23 @@
+{
+    "az.sdk.message": "HTTP request",
+    "method": "POST",
+    "url": "https://frank-ai-11-28.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-05-01-preview",
+    "tryCount": 1,
+    "content-length": 146,
+    "body": {
+        "messages": [
+            {
+                "content": [
+                    {
+                        "text": "Tell me a joke",
+                        "type": "text"
+                    }
+                ],
+                "role": "user"
+            }
+        ],
+        "temperature": 0.7,
+        "stream": false,
+        "model": "gpt-4o"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "az.sdk.message": "HTTP request",
+  "method": "POST",
+  "url": "https://frank-ai-11-28.openai.azure.com//openai/deployments/text-embedding-ada-002/embeddings?api-version=2024-08-01-preview",
+  "tryCount": 1,
+  "content-length": 85,
+  "body": {
+    "input": ["find a bike"],
+    "model": "text-embedding-ada-002",
+    "encoding_format": "base64"
+  }
+}
